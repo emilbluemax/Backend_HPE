@@ -1,0 +1,137 @@
+[
+    {
+        "time": "2023-04-04 16:56:06,017",
+        "level": "INFO",
+        "message": "Watching for file changes with StatReloader"
+    },
+    {
+        "time": "2023-04-04 16:56:06,176",
+        "level": "DEBUG",
+        "message": "Using EPollPoller"
+    },
+    {
+        "time": "2023-04-04 16:56:06,176",
+        "level": "DEBUG",
+        "message": "Created default connection workflow <pika.adapters.utils.connection_workflow.AMQPConnectionWorkflow object at 0x7f60a5790e50>"
+    },
+    {
+        "time": "2023-04-04 16:56:06,177",
+        "level": "DEBUG",
+        "message": "Starting AMQP Connection workflow asynchronously."
+    },
+    {
+        "time": "2023-04-04 16:56:06,177",
+        "level": "DEBUG",
+        "message": "call_later: added timeout <pika.adapters.select_connection._Timeout object at 0x7f60a5790c10> with deadline=3718.278548428 and callback=functools.partial(<bound method AMQPConnectionWorkflow._start_new_cycle_async of <pika.adapters.utils.connection_workflow.AMQPConnectionWorkflow object at 0x7f60a5790e50>>, first=True); now=3718.278548428; delay=0"
+    },
+    {
+        "time": "2023-04-04 16:56:06,177",
+        "level": "DEBUG",
+        "message": "Beginning a new AMQP connection workflow cycle; attempts remaining after this: 0"
+    },
+    {
+        "time": "2023-04-04 16:56:06,177",
+        "level": "DEBUG",
+        "message": "call_later: added timeout <pika.adapters.select_connection._Timeout object at 0x7f60a5790bb0> with deadline=3718.278704906 and callback=<bound method AMQPConnectionWorkflow._try_next_config_async of <pika.adapters.utils.connection_workflow.AMQPConnectionWorkflow object at 0x7f60a5790e50>>; now=3718.278704906; delay=0"
+    },
+    {
+        "time": "2023-04-04 16:56:06,177",
+        "level": "DEBUG",
+        "message": "_try_next_config_async: 'puffin.rmq2.cloudamqp.com':5671"
+    },
+    {
+        "time": "2023-04-04 16:56:06,225",
+        "level": "DEBUG",
+        "message": "process_timeouts: invoking callback=<bound method _AddressResolver._dispatch_result of <pika.adapters.utils.selector_ioloop_adapter._AddressResolver object at 0x7f60a5790370>>"
+    },
+    {
+        "time": "2023-04-04 16:56:06,225",
+        "level": "DEBUG",
+        "message": "Invoking asynchronous getaddrinfo() completion callback; host='puffin.rmq2.cloudamqp.com'"
+    },
+    {
+        "time": "2023-04-04 16:56:06,225",
+        "level": "DEBUG",
+        "message": "getaddrinfo returned 1 records"
+    },
+    {
+        "time": "2023-04-04 16:56:06,225",
+        "level": "DEBUG",
+        "message": "Attempting to connect using address record (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('15.206.140.228', 5671))"
+    },
+    {
+        "time": "2023-04-04 16:56:06,225",
+        "level": "INFO",
+        "message": "Pika version 1.1.0 connecting to ('15.206.140.228', 5671)"
+    },
+    {
+        "time": "2023-04-04 16:56:06,225",
+        "level": "DEBUG",
+        "message": "add_callback_threadsafe: added callback=<bound method _AddressResolver._dispatch_result of <pika.adapters.utils.selector_ioloop_adapter._AddressResolver object at 0x7f60a5790370>>"
+    },
+    {
+        "time": "2023-04-04 16:56:06,226",
+        "level": "DEBUG",
+        "message": "add_callback_threadsafe: added callback=<bound method _AsyncSocketConnector._start_async of <pika.adapters.utils.io_services_utils._AsyncSocketConnector object at 0x7f60a5704370>>"
+    },
+    {
+        "time": "2023-04-04 16:56:06,226",
+        "level": "DEBUG",
+        "message": "call_later: added timeout <pika.adapters.select_connection._Timeout object at 0x7f60a5704340> with deadline=3728.327676118 and callback=<bound method AMQPConnector._on_tcp_connection_timeout of <pika.adapters.utils.connection_workflow.AMQPConnector object at 0x7f60a57045e0>>; now=3718.327676118; delay=10.0"
+    },
+    {
+        "time": "2023-04-04 16:56:06,226",
+        "level": "DEBUG",
+        "message": "call_later: added timeout <pika.adapters.select_connection._Timeout object at 0x7f60a57044f0> with deadline=3733.327812197 and callback=<bound method AMQPConnector._on_overall_timeout of <pika.adapters.utils.connection_workflow.AMQPConnector object at 0x7f60a57045e0>>; now=3718.327812197; delay=15.0"
+    },
+    {
+        "time": "2023-04-04 16:56:06,226",
+        "level": "DEBUG",
+        "message": "process_timeouts: invoking callback=<bound method _AsyncSocketConnector._start_async of <pika.adapters.utils.io_services_utils._AsyncSocketConnector object at 0x7f60a5704370>>"
+    },
+    {
+        "time": "2023-04-04 16:56:06,226",
+        "level": "DEBUG",
+        "message": "SelectorIOServicesAdapter.set_writer(7, <bound method _AsyncSocketConnector._on_writable of <pika.adapters.utils.io_services_utils._AsyncSocketConnector object at 0x7f60a5704370>>)"
+    },
+    {
+        "time": "2023-04-04 16:56:06,227",
+        "level": "DEBUG",
+        "message": "set_writer(7, _) added handler Wr"
+    },
+    {
+        "time": "2023-04-04 16:56:06,227",
+        "level": "DEBUG",
+        "message": "Connection-establishment is in progress for <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.19.0.4', 54254)>."
+    },
+    {
+        "time": "2023-04-04 16:56:06,263",
+        "level": "INFO",
+        "message": "Socket connected: <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.19.0.4', 54254), raddr=('15.206.140.228', 5671)>"
+    },
+    {
+        "time": "2023-04-04 16:56:06,263",
+        "level": "DEBUG",
+        "message": "_AsyncSocketConnector._report_completion(None); <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.19.0.4', 54254), raddr=('15.206.140.228', 5671)>"
+    },
+    {
+        "time": "2023-04-04 16:56:06,263",
+        "level": "DEBUG",
+        "message": "SelectorIOServicesAdapter.remove_writer(7)"
+    },
+    {
+        "time": "2023-04-04 16:56:06,263",
+        "level": "DEBUG",
+        "message": "remove_writer(7) removed handler"
+    },
+    {
+        "time": "2023-03-26 14:44:58,366",
+        "level": "ERROR",
+        "message": "Internal Server Error: /api/products/14"
+    },
+    {
+        "time": "2023-03-26 14:44:58,366",
+        "level": "ERROR",
+        "message": "Internal Server Error: /api/products/77"
+    }
+]

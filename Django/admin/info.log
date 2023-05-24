@@ -1,0 +1,86 @@
+{"time":"2023-03-26 14:33:29,787", "level":"INFO", "message":"Watching for file changes with StatReloader"}
+{"time":"2023-03-26 14:36:07,322", "level":"WARNING", "message":"Not Found: /api/productS"}
+{"time":"2023-03-26 14:36:07,323", "level":"WARNING", "message":""GET /api/productS HTTP/1.1" 404 2632"}
+{"time":"2023-03-26 14:36:11,793", "level":"INFO", "message":""GET /api/products HTTP/1.1" 200 755"}
+{"time":"2023-03-26 14:36:52,501", "level":"INFO", "message":""GET /api/products/3 HTTP/1.1" 200 58"}
+{"time":"2023-03-26 14:37:01,120", "level":"INFO", "message":""GET /api/products HTTP/1.1" 200 755"}
+{"time":"2023-03-26 14:37:13,390", "level":"INFO", "message":""DELETE /api/products/14 HTTP/1.1" 204 0"}
+{"time":"2023-03-26 14:37:23,775", "level":"INFO", "message":""GET /api/products HTTP/1.1" 200 691"}
+{"time":"2023-03-26 14:44:58,366", "level":"ERROR", "message":"Internal Server Error: /api/products/14"}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/app/products/views.py", line 25, in retrieve
+    product = Product.objects.get(id=pk)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/query.py", line 429, in get
+    raise self.model.DoesNotExist(
+products.models.Product.DoesNotExist: Product matching query does not exist.
+{"time":"2023-03-26 14:44:58,368", "level":"ERROR", "message":""GET /api/products/14 HTTP/1.1" 500 94446"}
+{"time":"2023-03-30 08:50:32,959", "level":"INFO", "message":"Watching for file changes with StatReloader"}
+{"time":"2023-03-30 08:54:25,886", "level":"INFO", "message":"Watching for file changes with StatReloader"}
+{"time":"2023-03-30 09:12:36,672", "level":"INFO", "message":"Watching for file changes with StatReloader"}
+{"time":"2023-03-30 09:16:38,861", "level":"INFO", "message":"Watching for file changes with StatReloader"}
+{"time":"2023-03-30 09:21:04,645", "level":"INFO", "message":""GET /api/products/10 HTTP/1.1" 200 63"}
+{"time":"2023-03-30 09:21:50,548", "level":"INFO", "message":""GET /api/test HTTP/1.1" 200 26"}
+{"time":"2023-03-30 09:22:37,647", "level":"INFO", "message":""GET /api/products HTTP/1.1" 200 691"}
+{"time":"2023-03-30 14:27:04,771", "level":"INFO", "logger_name":"django.utils.autoreload", "module_name":"autoreload", "func_name":"run_with_reloader", "line_number":"613", "message":"Watching for file changes with StatReloader", "exception":"None"}
+{"time":"2023-03-30 14:27:41,845", "level":"INFO", "logger_name":"django.server", "module_name":"basehttp", "func_name":"log_message", "line_number":"157", "message":""GET /api/products HTTP/1.1" 200 691", "exception":"None"}
+{"time":"2023-03-30 14:27:51,760", "level":"INFO", "logger_name":"django.server", "module_name":"basehttp", "func_name":"log_message", "line_number":"157", "message":""GET /api/products/2 HTTP/1.1" 200 58", "exception":"None"}
+{"time":"2023-03-30 14:29:18,829", "level":"ERROR", "logger_name":"django.request", "module_name":"log", "func_name":"log_response", "line_number":"224", "message":"Internal Server Error: /api/products/1", "exception":"(<class 'products.models.Product.DoesNotExist'>, DoesNotExist('Product matching query does not exist.'), <traceback object at 0x7fae5cdc6200>)"}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/app/products/views.py", line 25, in retrieve
+    product = Product.objects.get(id=pk)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/query.py", line 429, in get
+    raise self.model.DoesNotExist(
+products.models.Product.DoesNotExist: Product matching query does not exist.
+{"time":"2023-03-30 14:29:18,835", "level":"ERROR", "logger_name":"django.server", "module_name":"basehttp", "func_name":"log_message", "line_number":"157", "message":""GET /api/products/1 HTTP/1.1" 500 94899", "exception":"None"}
+{"time":"2023-03-30 14:32:44,361", "level":"INFO", "logger_name":"django.utils.autoreload", "module_name":"autoreload", "func_name":"trigger_reload", "line_number":"236", "message":"/app/admin/settings.py changed, reloading.", "exception":"None"}
+{"time":"2023-03-30 14:33:31,273", "level":"INFO", "logger_name":"django.utils.autoreload", "module_name":"autoreload", "func_name":"run_with_reloader", "line_number":"613", "message":"Watching for file changes with StatReloader", "exception":"None", "caller":"/usr/local/lib/python3.9/site-packages/django/utils/autoreload.py:613"}
+{"time":"2023-03-30 14:42:08,125", "level":"INFO", "logger_name":"django.server", "module_name":"basehttp", "func_name":"log_message", "line_number":"157", "message":""GET /api/products HTTP/1.1" 200 691", "exception":"None", "caller":"/usr/local/lib/python3.9/site-packages/django/core/servers/basehttp.py:157"}
+{"time":"2023-03-30 14:42:36,685", "level":"INFO", "logger_name":"django.server", "module_name":"basehttp", "func_name":"log_message", "line_number":"157", "message":""GET /api/products/4 HTTP/1.1" 200 63", "exception":"None", "caller":"/usr/local/lib/python3.9/site-packages/django/core/servers/basehttp.py:157"}
+{"time":"2023-03-30 16:45:08,318", "level":"INFO", "logger_name":"django.utils.autoreload", "module_name":"autoreload", "func_name":"run_with_reloader", "line_number":"613", "message":"Watching for file changes with StatReloader", "exception":"None", "caller":"/usr/local/lib/python3.9/site-packages/django/utils/autoreload.py:613"}
+{"time":"2023-03-30 16:46:34,500", "level":"INFO", "logger_name":"django.utils.autoreload", "module_name":"autoreload", "func_name":"run_with_reloader", "line_number":"613", "message":"Watching for file changes with StatReloader", "exception":"None", "caller":"/usr/local/lib/python3.9/site-packages/django/utils/autoreload.py:613"}
+{"time":"2023-03-30 16:46:47,345", "level":"INFO", "logger_name":"django.server", "module_name":"basehttp", "func_name":"log_message", "line_number":"157", "message":""GET /api/products HTTP/1.1" 200 627", "exception":"None", "caller":"/usr/local/lib/python3.9/site-packages/django/core/servers/basehttp.py:157"}
+{"time":"2023-03-30 16:48:13,821", "level":"INFO", "logger_name":"django.utils.autoreload", "module_name":"autoreload", "func_name":"trigger_reload", "line_number":"236", "message":"/app/admin/settings.py changed, reloading.", "exception":"None", "caller":"/usr/local/lib/python3.9/site-packages/django/utils/autoreload.py:236"}
+{"time":"2023-03-30 16:49:43,937", "level":"INFO", "logger_name":"django.utils.autoreload", "module_name":"autoreload", "func_name":"run_with_reloader", "line_number":"613", "message":"Watching for file changes with StatReloader", "exception":"None", "caller":"/usr/local/lib/python3.9/site-packages/django/utils/autoreload.py:613"}
+{"time":"2023-03-30 16:50:20,426", "level":"INFO", "logger_name":"django.utils.autoreload", "module_name":"autoreload", "func_name":"run_with_reloader", "line_number":"613", "message":"Watching for file changes with StatReloader", "exception":"None", "caller":"/usr/local/lib/python3.9/site-packages/django/utils/autoreload.py:613"}
+{"time":"2023-03-30 17:21:38,249", "level":"INFO", "logger_name":"django.utils.autoreload", "module_name":"autoreload", "func_name":"run_with_reloader", "line_number":"613", "message":"Watching for file changes with StatReloader", "exception":"None", "caller":"/usr/local/lib/python3.9/site-packages/django/utils/autoreload.py:613"}
+{"time":"2023-03-30 17:22:22,298", "level":"INFO", "logger_name":"django.server", "module_name":"basehttp", "func_name":"log_message", "line_number":"157", "message":""GET /api/user/3 HTTP/1.1" 200 24", "exception":"None", "caller":"/usr/local/lib/python3.9/site-packages/django/core/servers/basehttp.py:157"}
+{"time":"2023-03-30 17:26:58,744", "level":"INFO", "logger_name":"django.server", "module_name":"basehttp", "func_name":"log_message", "line_number":"157", "message":""GET /api/user/3 HTTP/1.1" 200 24", "exception":"None", "caller":"/usr/local/lib/python3.9/site-packages/django/core/servers/basehttp.py:157"}
+{"time":"2023-04-03 08:39:13,497", "level":"INFO", "logger_name":"django.utils.autoreload", "module_name":"autoreload", "func_name":"run_with_reloader", "line_number":"613", "message":"Watching for file changes with StatReloader", "exception":"None", "caller":"/usr/local/lib/python3.9/site-packages/django/utils/autoreload.py:613"}
+{"time":"2023-04-03 08:41:15,112", "level":"INFO", "logger_name":"django.utils.autoreload", "module_name":"autoreload", "func_name":"run_with_reloader", "line_number":"613", "message":"Watching for file changes with StatReloader", "exception":"None", "caller":"/usr/local/lib/python3.9/site-packages/django/utils/autoreload.py:613"}
+{"time":"2023-04-03 08:43:01,611", "level":"INFO", "logger_name":"django.server", "module_name":"basehttp", "func_name":"log_message", "line_number":"157", "message":""GET /api/products HTTP/1.1" 200 627", "exception":"None", "caller":"/usr/local/lib/python3.9/site-packages/django/core/servers/basehttp.py:157"}
